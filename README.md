@@ -5,13 +5,13 @@ This is the official Homebrew tap for [AckAgent](https://github.com/ackagent/ack
 ## Installation
 
 ```bash
-brew install ackagent/ackagent/ackagent
+brew install ackagent/tap/ackagent
 ```
 
 Or add the tap first:
 
 ```bash
-brew tap ackagent/ackagent
+brew tap ackagent/tap
 brew install ackagent
 ```
 
