@@ -1,5 +1,5 @@
-class Ackagent < Formula
-  desc "Out-of-band approval platform with hardware-backed cryptographic signing (all components)"
+class AckagentCli < Formula
+  desc "Out-of-band approval platform with hardware-backed cryptographic signing"
   homepage "https://ackagent.com"
   version "0.0.21"
   license :cannot_represent
@@ -22,16 +22,11 @@ class Ackagent < Formula
     end
   end
 
-  depends_on "ackagent/tap/ackagent-cli"
-  depends_on "ackagent/tap/ackagent-sk-provider"
-  depends_on "ackagent/tap/ackagent-pkcs11"
-  depends_on "ackagent/tap/ackagent-age-plugin"
-
   def install
-    doc.install "NOTICES"
+    bin.install "ackagent"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{HOMEBREW_PREFIX}/bin/ackagent --version")
+    assert_match version.to_s, shell_output("#{bin}/ackagent --version")
   end
 end
