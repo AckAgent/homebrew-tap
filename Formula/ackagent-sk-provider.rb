@@ -1,7 +1,7 @@
 class AckagentSkProvider < Formula
   desc "SSH SecurityKeyProvider for AckAgent (software keys)"
   homepage "https://ackagent.com"
-  version "0.0.26"
+  version "0.0.27"
   license :cannot_represent
 
   depends_on "ackagent/tap/ackagent-cli"
@@ -9,18 +9,18 @@ class AckagentSkProvider < Formula
   on_macos do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-sk-provider-v#{version}-darwin-arm64.tar.gz"
-      sha256 "64d574407c57c37e411fa3b3604d67b5a5af5deb41bde5a8a3d62e2220d31b3a" # darwin-arm64
+      sha256 "4f35e8288e80157bd08e9914213b282b8e46531de5a55d4affec440c401f20bf" # darwin-arm64
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-sk-provider-v#{version}-linux-arm64.tar.gz"
-      sha256 "79c87e7aef49061e46ad338496d7d051a69d034da7f4ee0b58fc196466ca6c91" # linux-arm64
+      sha256 "cb5e1bc2851c1010e53d587edd7e17931115547eb891c76dfec04d96150ab155" # linux-arm64
     end
     on_intel do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-sk-provider-v#{version}-linux-amd64.tar.gz"
-      sha256 "4b9927ad4d7655732789bcd2130eb3e6385a60502eda420bd4c337fe5afaea99" # linux-amd64
+      sha256 "fb24e037c33dd65133bb533471827bf36c907545f26fec4257c42bdbf0533134" # linux-amd64
     end
   end
 
