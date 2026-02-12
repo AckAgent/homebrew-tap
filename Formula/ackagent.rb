@@ -4,6 +4,15 @@ class Ackagent < Formula
   version "0.0.27"
   license :cannot_represent
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, all: "60b1556efb95eaa4831c09a9c5a70dd1e9a3ae9ebb2a3c5273b96d802b57fcd8" # bottle
+  end
+
+  pour_bottle? do
+    reason "This formula installs pre-built binaries."
+    satisfy { false }
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-v#{version}-darwin-arm64.tar.gz"

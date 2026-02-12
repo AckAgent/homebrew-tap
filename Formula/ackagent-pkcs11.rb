@@ -4,6 +4,15 @@ class AckagentPkcs11 < Formula
   version "0.0.27"
   license :cannot_represent
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, all: "285893b60888631cdec26f3df47e2e905d477e16eae6b615524e609735b97030" # bottle
+  end
+
+  pour_bottle? do
+    reason "This formula installs pre-built binaries."
+    satisfy { false }
+  end
+
   depends_on "ackagent/tap/ackagent-cli"
 
   on_macos do

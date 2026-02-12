@@ -4,6 +4,15 @@ class AckagentAgePlugin < Formula
   version "0.0.27"
   license :cannot_represent
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, all: "870b2c5e9d5ff4b5d19291be55f9312c682d6d9804b75dd748182ea3192b4d89" # bottle
+  end
+
+  pour_bottle? do
+    reason "This formula installs pre-built binaries."
+    satisfy { false }
+  end
+
   depends_on "ackagent/tap/ackagent-cli"
 
   on_macos do
