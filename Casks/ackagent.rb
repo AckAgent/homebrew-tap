@@ -1,6 +1,6 @@
 cask "ackagent" do
-  version "0.0.27"
-  sha256 "ab0424cd718952700dbfc749c2082938c99418538558e120df0a9b12935e24cd" # pkg
+  version "0.0.28"
+  sha256 "88ac9963a908552a6f8a5946b2305c9e8e06c095d1e3d945f9beab3560571e76" # pkg
 
   url "https://github.com/ackagent/ackagent/releases/download/v#{version}/AckAgent-v#{version}-arm64.pkg"
   name "AckAgent"
