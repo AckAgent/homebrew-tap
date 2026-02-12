@@ -3,7 +3,6 @@ class AckagentCli < Formula
   homepage "https://ackagent.com"
   version "0.0.27"
   license :cannot_represent
-  bottle :unneeded
 
   on_macos do
     on_arm do

@@ -3,7 +3,6 @@ class AckagentAgePlugin < Formula
   homepage "https://ackagent.com"
   version "0.0.27"
   license :cannot_represent
-  bottle :unneeded
 
   depends_on "ackagent/tap/ackagent-cli"
 
