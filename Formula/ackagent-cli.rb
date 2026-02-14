@@ -1,11 +1,11 @@
 class AckagentCli < Formula
   desc "Out-of-band approval platform with hardware-backed cryptographic signing"
   homepage "https://ackagent.com"
-  version "0.0.28"
+  version "0.0.29"
   license :cannot_represent
 
   bottle do
-    sha256 cellar: :any_skip_relocation, all: "4324885fd8db637606c6575418ff14cab5fe493d8a54b4ccc287898a3726ac9c" # bottle
+    sha256 cellar: :any_skip_relocation, all: "67532efd9cc980306ac7a0a981680cb3044f50e756b411596e9c6b57ede332bc" # bottle
   end
 
   pour_bottle? do
@@ -16,18 +16,18 @@ class AckagentCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-v#{version}-darwin-arm64.tar.gz"
-      sha256 "4324885fd8db637606c6575418ff14cab5fe493d8a54b4ccc287898a3726ac9c" # darwin-arm64
+      sha256 "67532efd9cc980306ac7a0a981680cb3044f50e756b411596e9c6b57ede332bc" # darwin-arm64
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-v#{version}-linux-arm64.tar.gz"
-      sha256 "a061443cc24ad27181287479c1a110da581c11819bf8e7050d89ec59e0c26341" # linux-arm64
+      sha256 "069e49aca42b67ff1ee15b54aad73ef4f5ed68d94b332af31fbfce4424d31c27" # linux-arm64
     end
     on_intel do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-v#{version}-linux-amd64.tar.gz"
-      sha256 "2bd6119198fec3859404bf2fc5e1f1ed16060444d031bbf6e7ba0e00b3712bcf" # linux-amd64
+      sha256 "ed482c944482fec7a1c5c8837d1c403d1e54cc6c6b4ff010541f173a3ecac453" # linux-amd64
     end
   end
 
