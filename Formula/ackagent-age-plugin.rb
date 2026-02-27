@@ -1,11 +1,11 @@
 class AckagentAgePlugin < Formula
   desc "Age encryption plugin for AckAgent"
   homepage "https://ackagent.com"
-  version "0.0.36"
+  version "0.0.37"
   license :cannot_represent
 
   bottle do
-    sha256 cellar: :any_skip_relocation, all: "7571fdbd8fce680b3d2f13482c88d03f12a0345ce3892287fab36bf9147dc00b" # bottle
+    sha256 cellar: :any_skip_relocation, all: "f3e6bec4485579cde9c821e1dd40364c86e16aab45c5bf50f046facd14d58524" # bottle
   end
 
   pour_bottle? do
@@ -18,18 +18,18 @@ class AckagentAgePlugin < Formula
   on_macos do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-age-plugin-v#{version}-darwin-arm64.tar.gz"
-      sha256 "7571fdbd8fce680b3d2f13482c88d03f12a0345ce3892287fab36bf9147dc00b" # darwin-arm64
+      sha256 "f3e6bec4485579cde9c821e1dd40364c86e16aab45c5bf50f046facd14d58524" # darwin-arm64
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-age-plugin-v#{version}-linux-arm64.tar.gz"
-      sha256 "dce95a84967088f3439798aae0298193429c68e715bd533c5ed8a933cf21b80e" # linux-arm64
+      sha256 "e1fb07430073f040de428f3785ea73317311cd74effa86c72c1f1587dd7be7b6" # linux-arm64
     end
     on_intel do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-age-plugin-v#{version}-linux-amd64.tar.gz"
-      sha256 "0c17f12ce09017af765864a9f0bc7401133d98e085cb4f7643cad26721863985" # linux-amd64
+      sha256 "083a6956121f0804f5f49434c2b924ebbab3136685ff90ab1eee7d13fbd298cf" # linux-amd64
     end
   end
 
