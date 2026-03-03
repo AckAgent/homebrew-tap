@@ -1,11 +1,11 @@
 class AckagentPkcs11 < Formula
   desc "SSH PKCS#11 provider for AckAgent (hardware keys)"
   homepage "https://ackagent.com"
-  version "0.0.40"
+  version "0.0.41"
   license :cannot_represent
 
   bottle do
-    sha256 cellar: :any_skip_relocation, all: "4b58fcb2a3a957e4a3bcf200b7d27dd8d97c5b8ed1b49fd190db0b087b778742" # bottle
+    sha256 cellar: :any_skip_relocation, all: "500d512cd86562551d48fac20343a9753dd2cb7e34bb0d45ce25d33637245742" # bottle
   end
 
   pour_bottle? do
@@ -18,18 +18,18 @@ class AckagentPkcs11 < Formula
   on_macos do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-pkcs11-v#{version}-darwin-arm64.tar.gz"
-      sha256 "4b58fcb2a3a957e4a3bcf200b7d27dd8d97c5b8ed1b49fd190db0b087b778742" # darwin-arm64
+      sha256 "500d512cd86562551d48fac20343a9753dd2cb7e34bb0d45ce25d33637245742" # darwin-arm64
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-pkcs11-v#{version}-linux-arm64.tar.gz"
-      sha256 "ca28001e9639fee24491f835d0535278e63d42df8eac1ca8fd4ee8cf79c22757" # linux-arm64
+      sha256 "8151bb101dd91f96148180d8bf1a2059e47c9c1ab9437e7474f18eaf738665c9" # linux-arm64
     end
     on_intel do
       url "https://github.com/ackagent/ackagent/releases/download/v#{version}/ackagent-pkcs11-v#{version}-linux-amd64.tar.gz"
-      sha256 "85d12f602bda45737af91fd5f461079d9f1955d0acce633a924a8d5db50d0e76" # linux-amd64
+      sha256 "a6d235b0c4b7017cce22f2f86c8e097e94a11eaf3c40edd1bdf109fc7bfe484b" # linux-amd64
     end
   end
 
