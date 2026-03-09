@@ -1,6 +1,6 @@
 # Homebrew Tap for AckAgent
 
-This is the official Homebrew tap for [AckAgent](https://github.com/ackagent/ackagent).
+This is the official Homebrew tap for [AckAgent](https://github.com/AckAgent/cli).
 
 ## Installation
 
@@ -15,6 +15,12 @@ brew tap ackagent/tap
 brew install ackagent
 ```
 
+This builds from source and installs:
+- `ackagent` — CLI for SSH, GPG, age, and PAM signing
+- `age-plugin-ackagent` — age encryption plugin
+- `libackagent-sk` — SSH SecurityKeyProvider (software keys)
+- `libackagent-pkcs11` — SSH PKCS#11 provider (hardware keys)
+
 ## Usage
 
 After installation, authenticate with your iOS device:
@@ -23,4 +29,4 @@ After installation, authenticate with your iOS device:
 ackagent login
 ```
 
-See the [main repository](https://github.com/ackagent/ackagent) for full documentation.
+See the [CLI repository](https://github.com/AckAgent/cli) for full documentation.
