@@ -5,6 +5,12 @@ class Ackagent < Formula
   sha256 "0a9e53fc572bbfca7c51f20bd66cf78d2e1fa25ca26c5b70cc2af66dfacb8933"
   license :cannot_represent
 
+  bottle do
+    root_url "https://github.com/AckAgent/homebrew-tap/releases/download/v0.1.8"
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "2b84f440f4c27486e2eb8f8bbc1320135a42928994ecc351e74da519ab069c0e"
+  end
+
   depends_on "go" => :build
 
   def install
