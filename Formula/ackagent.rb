@@ -1,8 +1,8 @@
 class Ackagent < Formula
   desc "Out-of-band approval with hardware-backed cryptographic signing"
   homepage "https://ackagent.com"
-  url "https://github.com/AckAgent/cli/archive/refs/tags/v0.1.7.tar.gz"
-  sha256 "1e0465cbf2210926992b5ac273ff25847da6a2c30c8c320def1e0cdfae507690"
+  url "https://github.com/AckAgent/cli/archive/refs/tags/v0.1.8.tar.gz"
+  sha256 "0a9e53fc572bbfca7c51f20bd66cf78d2e1fa25ca26c5b70cc2af66dfacb8933"
   license :cannot_represent
 
   depends_on "go" => :build
