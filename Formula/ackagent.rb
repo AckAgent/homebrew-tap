@@ -6,9 +6,9 @@ class Ackagent < Formula
   license :cannot_represent
 
   bottle do
-    root_url "https://github.com/AckAgent/homebrew-tap/releases/download/v0.1.8"
-    rebuild 1
-    sha256 cellar: :any, arm64_sequoia: "2b84f440f4c27486e2eb8f8bbc1320135a42928994ecc351e74da519ab069c0e"
+    root_url "https://github.com/AckAgent/homebrew-tap/releases/download/v0.3.5"
+    rebuild 2
+    sha256 cellar: :any, arm64_sequoia: "e75c34e3945c8f2bae03bde21bf605851b563e248eb092fddaa2dc3d12af4f25"
   end
 
   depends_on "go" => :build
