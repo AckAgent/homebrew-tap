@@ -19,7 +19,7 @@ class Ackagent < Formula
 
     ldflags = %W[
       -s -w
-      -X main.version=#{version}
+      -X github.com/ackagent/cli/internal/shared/version.Version=#{version}
     ]
     ENV["CGO_ENABLED"] = "1"
 
